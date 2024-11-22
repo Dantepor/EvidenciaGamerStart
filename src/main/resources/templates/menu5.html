@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOVEDADES</title>
+<link th:href="@{/mdbootstrap/css/mdb.min.css}" rel="stylesheet">
+<link th:href="@{/css/menu5.css}" rel="stylesheet">
+</head>
+<body>
+			<div class="container p-3">
+			    <div class="row header-row">
+			        <div class="col-2">
+			            <!-- Icono -->
+						<a th:href="@{/menu/primero}">
+						<img th:src="@{/img/logo4.png}" alt="Icono" width="100px"/>
+						</a>
+			        </div>
+			        <div class="col-6">
+			            <!-- Barra de búsqueda -->
+			            <input type="text" class="form-control" placeholder="Buscar productos">
+			        </div>
+			        <div class="col-2">
+			            <!-- Icono de carrito de compras -->
+			            <img th:src="@{/img/compra.png}" alt="Carrito de compras" width="130px"/>
+			        </div>
+			        <div class="col-2">
+			            <!-- Imagen de perfil -->
+						<a th:href="@{/ingreso/perfil}">
+			            <img th:src="@{/img/perfil.png}" alt="Imagen de perfil" width="70px"/>
+			        </div>
+			    </div>
+
+			    <!-- Botones -->
+				<div class="row">
+				    <div class="col text-center">
+				        <a class="btn custom-btn" th:href="@{/menu/segundo}">Videojuegos</a>
+				    </div>
+				    <div class="col text-center">
+				        <a class="btn custom-btn" th:href="@{/menu/tercero}">Consolas</a>
+				    </div>
+				    <div class="col text-center">
+				        <a class="btn custom-btn" th:href="@{/menu/cuarto}">Accesorios</a>
+				    </div>
+				    <div class="col text-center">
+				        <a class="btn custom-btn" th:href="@{/menu/quinto}">Ofertas</a>
+				    </div>
+					<div class="col text-center">
+					     <a class="btn custom-btn" th:href="@{/menu/sexto}">Novedades</a>
+					</div>
+				</div>
+				<!-- Texto "Últimos lanzamientos" y cuadro en blanco -->
+					    <div class="row">
+					        <div class="col section-title">
+					            <h1 style="color: white;">NOVEDADES</h1>
+					        </div>
+					    </div>
+
+					    <div class="row">
+					        <div class="col white-box">
+					            <!-- Primera fila de productos -->
+					            <div class="row">
+					                <div class="col-3 text-center">
+					                    <h5>VR realidad virtua</h5>
+					                    <img class="product-img" th:src="@{/img/novedades1.jpg}" alt="Producto 1" height="200px">
+					                    <p class="product-price">S/ 260.00</p>
+					                    <button type="button" class="btn custom-btn">Comprar</button>
+					                </div>
+					                <div class="col-3 text-center">
+					                    <h5>Reloj tecnologico deluxe</h5>
+					                    <img class="product-img" th:src="@{/img/novedades2.jpg}" alt="Producto 2" height="200px">
+					                    <p class="product-price">S/ 215.00</p>
+					                    <button type="button" class="btn custom-btn">Comprar</button>
+					                </div>
+					                <div class="col-3 text-center">
+					                    <h5>Lentes tecnologicos </h5>
+					                    <img class="product-img" th:src="@{/img/novedades3.jpg}" alt="Producto 1" height="200px">
+					                    <p class="product-price">S/ 176.00</p>
+					                    <button type="button" class="btn custom-btn">Comprar</button>
+					                </div>
+					                <div class="col-3 text-center">
+					                    <h5>Anillo tecnologico deluxe</h5>
+					                    <img class="product-img" th:src="@{/img/novedades4.jpeg}" alt="Producto 2" height="200px">
+					                    <p class="product-price">S/ 154.00</p>
+					                    <button type="button" class="btn custom-btn">Comprar</button>
+					                </div>
+					            </div>
+					            <!-- Segunda fila de productos -->
+								<div class="row">
+								    <div class="col-3 text-center">
+								        <h5>VR realidad virtua</h5>
+								        <img class="product-img" th:src="@{/img/novedades1.jpg}" alt="Producto 1" height="200px">
+								        <p class="product-price">S/ 260.00</p>
+								        <button type="button" class="btn custom-btn">Comprar</button>
+								    </div>
+								    <div class="col-3 text-center">
+								        <h5>Reloj tecnologico deluxe</h5>
+								        <img class="product-img" th:src="@{/img/novedades2.jpg}" alt="Producto 2" height="200px">
+								        <p class="product-price">S/ 215.00</p>
+								        <button type="button" class="btn custom-btn">Comprar</button>
+								    </div>
+								    <div class="col-3 text-center">
+								        <h5>Lentes tecnologicos </h5>
+								        <img class="product-img" th:src="@{/img/novedades3.jpg}" alt="Producto 1" height="200px">
+								        <p class="product-price">S/ 176.00</p>
+								        <button type="button" class="btn custom-btn">Comprar</button>
+								    </div>
+								    <div class="col-3 text-center">
+								        <h5>Anillo tecnologico deluxe</h5>
+								        <img class="product-img" th:src="@{/img/novedades4.jpeg}" alt="Producto 2" height="200px">
+								        <p class="product-price">S/ 154.00</p>
+								        <button type="button" class="btn custom-btn">Comprar</button>
+								    </div>
+								</div>
+								 <!-- Tercera fila de productos -->
+								 <div class="row">
+								     <div class="col-3 text-center">
+								         <h5>VR realidad virtua</h5>
+								         <img class="product-img" th:src="@{/img/novedades1.jpg}" alt="Producto 1" height="200px">
+								         <p class="product-price">S/ 260.00</p>
+								         <button type="button" class="btn custom-btn">Comprar</button>
+								     </div>
+								     <div class="col-3 text-center">
+								         <h5>Reloj tecnologico deluxe</h5>
+								         <img class="product-img" th:src="@{/img/novedades2.jpg}" alt="Producto 2" height="200px">
+								         <p class="product-price">S/ 215.00</p>
+								         <button type="button" class="btn custom-btn">Comprar</button>
+								     </div>
+								     <div class="col-3 text-center">
+								         <h5>Lentes tecnologicos </h5>
+								         <img class="product-img" th:src="@{/img/novedades3.jpg}" alt="Producto 1" height="200px">
+								         <p class="product-price">S/ 176.00</p>
+								         <button type="button" class="btn custom-btn">Comprar</button>
+								     </div>
+								     <div class="col-3 text-center">
+								         <h5>Anillo tecnologico deluxe</h5>
+								         <img class="product-img" th:src="@{/img/novedades4.jpeg}" alt="Producto 2" height="200px">
+								         <p class="product-price">S/ 154.00</p>
+								         <button type="button" class="btn custom-btn">Comprar</button>
+								     </div>
+								 </div>
+					        </div>
+					    </div>
+						<!--Pie de Página -->
+									<div class="red-box">
+									    <div class="container">
+									        <div class="row">
+									            <!-- Columna de imágenes -->
+									            <div class="col-3 text-center">
+									                <!-- Imágenes -->
+									                <img th:src="@{/img/facebook.png}" width="47px" alt="Imagen Secundaria 1">
+									                <img th:src="@{/img/insta.png}" width="47px" alt="Imagen Secundaria 2">
+									                <img th:src="@{/img/wasap.png}" width="41px" alt="Imagen Secundaria 3">
+									                <!-- Logo debajo de las imágenes -->
+									                <img th:src="@{/img/logo4.png}" width="100px" alt="Imagen Principal">
+									            </div>
+									            <!-- Columna de texto -->
+									            <div class="col-3">
+									                <p>Información</p>
+									                <p>Preguntas Frecuentes</p>
+									                <p>Medios de Pago</p>
+									                <p>Terminos y Condiciones</p>
+									            </div>
+									            <!-- Columna de texto -->
+									            <div class="col-3">
+									                <p>Servicio al Cliente</p>
+									                <p>Formulario de Contacto</p>
+									                <p>Libro de Reclamaciones</p>
+									            </div>
+									            <!-- Columna de texto -->
+									            <div class="col-3">
+									                <p>Contactanos</p>
+									                <p>Siempre abiertos -</p>
+									                <p>Horarios de Despacho</p>
+									                <p>Apartir de las 10am a 8pm</p>
+									                <p>Los pedidos del dia domingo</p>
+									                <p>Se envian el dia lunes</p>
+									            </div>
+									        </div>
+									        <!-- Texto centrado -->
+									        <div class="row mt-3">
+									            <div class="col text-center">
+									                <p>2024 © Todos los derechos reservados</p>
+									            </div>
+									        </div>
+									    </div>
+									</div>
+		<script type="text/javascript" th:src="@{/mdbootstrap/js/mdb.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</body>
+</html>

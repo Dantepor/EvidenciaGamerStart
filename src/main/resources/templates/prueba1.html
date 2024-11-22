@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA1</title>
+    <link th:href="@{/mdbootstrap/css/mdb.min.css}" rel="stylesheet">
+    <link th:href="@{/css/prueba1.css}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	    <header>
+	        <nav class="menu-container">
+	            <ul class="menu">
+	                <li class="menu-item inicio">
+	                    <a href="#">
+	                        <img th:src= "@{/img/GamerStar1.png}" width="50px" height="45px" alt="Inicio">
+	                    </a>
+	                </li>
+	                <li class="menu-item productos-large">
+	                    <div class="search-bar">
+	                        <i class="fas fa-search search-icon"></i>
+	                        <input type="text" placeholder="Buscar...">
+	                        <div class="dropdown">
+	                            <span class="dropbtn">Todas las categorías <i class="fas fa-chevron-down"></i></span>
+	                            <div class="dropdown-content">
+	                                <a href="#">Consolas</a>
+	                                <a href="#">Videojuegos</a>
+	                                <a href="#">Accesorios</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </li>
+	                <li class="menu-item categorias"><a href="#"><i class="fas fa-comment"></i> Soporte</a></li>
+	                <li class="menu-item ofertas-small"><a href="#"><i class="fas fa-heart"></i> Lista de Deseos</a></li>
+	                <li class="menu-item contacto"><a href="#"><i class="fas fa-user"></i> Iniciar Sesión / Regístrate</a></li>
+	                <li class="menu-item acerca-small">
+	                    <a href="#">
+	                        <img  th:src="@{/img/banderaper.png}" width="42px" height="30px" alt="Bandera de Perú">
+	                    </a>
+	                </li>
+	            </ul>
+	        </nav>
+	    </header>
+	    <div class="submenu">
+	        <a href="#" class="submenu-item">Consolas</a>
+	        <a href="#" class="submenu-item">Videojuegos</a>
+	        <a href="#" class="submenu-item">Accesorios</a>
+	        <a href="#" class="submenu-item">Ofertas</a>
+	        <a href="#" class="submenu-item">Novedades</a>
+	    </div>
+	    <div class="image-container">
+	        <div class="image-content">
+	            <h1>UNA NUEVA</h1>
+	            <h2>AVENTURA INICIA</h2>
+	            <p>DRAGON BALL: Sparking! ZERO lleva a un nuevo nivel el legendario estilo de juego de</p> 
+	            <p>la serie Budokai Tenkaichi. Aprende a dominar a diversos personajes jugables, cada</p>
+	            <p>uno con sus habilidades, transformaciones y técnicas propias. Libera tu espíritu de</p>
+	            <p>lucha y pelea en escenarios que se derrumban y reaccionan a tu poder a medida que</p> 
+	            <p>el combate se recrudece.</p>
+	            <button class="buy-button">RESERVAR AHORA</button>
+	        </div>
+	    </div>
+	<!-- Sección de últimos lanzamientos -->
+	<div class="latest-releases">
+	    <h2>ULTIMOS LANZAMIENTOS</h2>
+	    <div class="release-grid">
+	        <div class="release-item">
+	            <img th:src= "@{/img/juego1.jpg}" alt="Nuevo Juego 1">
+	            <h3 class="release-title">THE LAST OF US PART II</h3>
+	            <p class="release-date">19 / 06 / 20</p>
+	            <div class="offer-ends">
+	                <p>La Oferta termina en: <span class="offer-days">23 días</span></p>
+	            </div>
+	            <div class="offer-price">
+	                <p>S/ 150.00 <span class="original-price">S/ 200.00</span> <span class="discount">-25%</span></p>
+	            </div>
+	            <img th:src="@{/img/PS5.png}" alt="PS5" class="ps5-image">
+	            <span class="heart-icon">&#10084;</span>
+	        </div>
+	        <!-- Repite este bloque para cada nuevo juego -->
+	        <div class="release-item">
+	            <img th:src= "@{/img/juego3.jpeg}" alt="Nuevo Juego 2" >
+	            <h3 class="release-title1">Forza Horizon 5 - Premium Edition</h3>
+	            <p class="release-date1">01 / 11 / 21</p>
+	            <div class="offer-ends1">
+	                <p>Premium Edition</span></p>
+	            </div>
+	            <div class="offer-price1">
+	                <p>S/ 299.00</p>
+	            </div>
+	            <div class="platform-icons">
+	                <img th:src="@{/img/PS5.png}" alt="PS5" class="platform-icon">
+	                <img th:src="@{/img/Xbox.png}" alt="Xbox" class="platform-icon1">
+	                <img th:src="@{/img/PC.png}" alt="Xbox" class="platform-icon2">
+	            </div>
+	            <span class="heart-icon">&#10084;</span>
+	        </div>
+	        <!-- Repite este bloque para cada nuevo juego -->
+	        <div class="release-item">
+	            <img th:src="@{/img/juego2.jpeg}" alt="Nuevo Juego 3">
+	            <h3 class="release-title1">Final Fantasy XIV: A Realm Reborn</h3>
+	            <p class="release-date">19 / 06 / 20</p>
+	            <div class="offer-ends2">
+	                <p>Ya Disponible</p>
+	            </div>
+	            <div class="offer-price">
+	                <p>S/ 66.90 <span class="original-price">S/ 167.00</span> <span class="discount">-60%</span></p>
+	            </div>
+	            <div class="platform-icons">
+	                <img th:src="@{/img/PS5.png}" alt="PS5" class="platform-icon11">
+	                <img th:src="@{/img/PC.png}" alt="Xbox" class="platform-icon21">
+	            </div>
+	            <span class="heart-icon">&#10084;</span>
+	        </div>
+	        <!-- Repite este bloque para cada nuevo juego -->
+	        <div class="release-item">
+	            <img th:src="@{/img/juego4.jpeg}" alt="Nuevo Juego 4">
+	            <h3 class="release-title1">Street Fighter V Champion Edition</h3>
+	            <p class="release-date">19 / 06 / 20</p>
+	            <div class="offer-ends11">
+	                <p>La Oferta termina</p>
+	            </div>
+	            <div class="offer-price">
+	                <p>S/ 150.00 <span class="original-price">S/ 200.00</span> <span class="discount">-25%</span></p>
+	            </div>
+	            <div class="platform-icons">
+	                <img th:src="@{/img/PS5.png}" alt="PS5" class="platform-icon11">
+	                <img th:src="@{/img/PC.png}" alt="Xbox" class="platform-icon21">
+	            </div>
+	            <span class="heart-icon">&#10084;</span>
+	        </div>
+	        <!-- Fin del bloque repetido -->
+	    </div>
+	</div>
+	<div class="dual-section">
+	    <div class="left-section">
+	        <img th:src="@{/img/fifatitulo.png}" alt="Imagen Izquierda" class="left-image">
+	        <h1 class="left-title" >TE DAMOS LA </h1>
+	        <h1 class="left-title2" >BIENVENIDA</h1>
+	        <h1 class="left-title3" >AL CLUB</h1>
+	        <p class="left-text">Se mueve, se ve y se juega como el fútbol. EA SPORTS</p>
+	        <p class="left-text"> FC™ 24 te acerca más al fútbol que nunca gracias a un</p>
+	        <p class="left-text">trío de tecnologías que llevan el máximo realismo a</p>
+	        <p class="left-text">cada partido.</p>
+	        <button class="buy-button">Comprar Ahora</button>
+	    </div>
+	    <div class="right-section">
+	        <img th:src="@{/img/fifa.jpeg}" alt="Imagen Derecha Grande" class="right-image">
+	    </div>
+	</div>
+	    <!-- Resto del contenido de la página -->
+</body>
+</html>

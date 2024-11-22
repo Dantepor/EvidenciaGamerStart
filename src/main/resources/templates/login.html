@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN</title>
+    <link th:href="@{../mdbootstrap/css/mdb.min.css}" rel="stylesheet"> <!-- Estilos de MDBootstrap -->
+    <link th:href="@{/css/login.css}" rel="stylesheet"> <!-- Estilos personalizados -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h2>LOGIN</h2>
+        <div class="form__group field">
+            <input type="text" class="form__field" placeholder="Usuario o correo" id="username" required />
+            <label for="username" class="form__label"><i class='bx bxs-user'></i></label>
+        </div>
+        <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Contraseña" id="password" required />
+            <label for="password" class="form__label"><i class='bx bxs-lock-alt'></i></label>
+        </div>
+        <a class="btn-1" th:href="@{/menu/primero}">Ingresar</a>
+        <div class="remember">
+            <a href="recuperarcontraseña.html" th:href="@{/proyecto/registro}" >No tienes cuenta? Registrate</a>
+        </div>
+    </div>
+    <script type="text/javascript" th:src="@{../mdbootstrap/js/mdb.min.js}"></script> <!-- Scripts de MDBootstrap -->
+</body>
+</html>

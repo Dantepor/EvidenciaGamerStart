@@ -1,0 +1,137 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url('/img/fondototal.jpeg');
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Estilos para ajustar la imagen */
+.img-fit {
+    max-width: 120%;
+}
+
+/* Estilos para la fila del encabezado */
+.header-row {
+    margin-bottom: 50px;
+}
+
+.header-row .col-2:nth-child(3) img {
+    margin-left: 60px; /* Agrega margen izquierdo para mover la imagen hacia la derecha */
+    margin-top: 10px; /* Mover la imagen 10px hacia abajo */
+}
+
+.header-row .col-2:nth-child(4) img {
+    margin-top: 10px; /* Mover la imagen 10px hacia abajo */
+    margin-left: 70px; /* Agrega margen izquierdo para mover la imagen hacia la derecha */
+}
+
+.header-row .col-2 img {
+    margin-top: -10px; /* Mover el logo 10px hacia arriba */
+    margin-left: 15px;
+}
+
+.header-row .form-control {
+    margin-top: 25px; /* Mover la barra de búsqueda 10px hacia abajo */
+    border-radius: 8px;
+    margin-left: 30px; /* Agrega margen izquierdo para mover la imagen hacia la derecha */
+}
+
+/* Estilos para el icono */
+.header-row img {
+    max-width: 100%;
+}
+
+/* Estilos para la barra de búsqueda */
+.header-row .form-control {
+    width: 100%;
+}
+
+/* Estilos para el icono de carrito de compras */
+.header-row .col-2:nth-child(3) img {
+    max-width: 100%;
+    margin-right: 12px;
+}
+
+/* Estilos para la imagen de perfil */
+.header-row .col-2:nth-child(4) img {
+    max-width: 100%;
+}
+
+/* Estilos para los botones */
+.custom-btn {
+    border: 3px solid #840E94; /* Color del borde morado */
+    background-color: #840E94; /* Color de fondo morado no tan fuerte */
+    color: white; /* Color del texto blanco */
+    margin-right: 10px; /* Espacio entre botones */
+    border-radius: 15px; /* Radio de borde */
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto "Últimos lanzamientos" */
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-title span {
+    display: inline-block;
+    padding: 0 10px; /* Espacio entre texto y línea */
+    border-bottom: 1px solid #fff; /* Línea de subrayado */
+}
+
+/* Estilos para el cuadro en blanco */
+.white-box {
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(255, 128, 192); /* Color blanco */
+    border-radius: 20px; /* Borde circular */
+}
+
+/* Estilos para las imágenes */
+.product-img {
+    width: 80%;
+    margin-bottom: 10px; /* Espacio entre imágenes */
+}
+
+.product-title {
+    font-size: 10px; /* Tamaño de letra más pequeño */
+}
+
+/* Estilos para el precio */
+.product-price {
+    font-weight: bold;
+    color: black;
+}
+
+/* Estilos para el botón comprar */
+.btn-comprar {
+    margin-top: 10px; /* Espacio entre precio y botón */
+}
+
+/* Estilos para el pie de página */
+.red-box {
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 20px; /* Espacio interno */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Pegado al fondo */
+    left: 0; /* Pegado a la izquierda */
+}
+
+.red-box p {
+    margin: 5px 0; /* Margen entre párrafos */
+}
+
+h5{
+	color: black;
+}
+
+/* Cambiar color del texto a blanco al pasar el cursor */
+.custom-btn:hover {
+    color: white;
+}
+
